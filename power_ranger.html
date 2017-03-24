@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Power Ranger</title>
+  </head>
+  <body>
+    <script>
+//this script is broken into sections for easier identifying 
+
+//power ranger values//
+    redPower = {name: "Bob",color: "red", dino: "t-rex", logo:'https://s-media-cache-ak0.pinimg.com/236x/b6/b1/24/b6b124992664eba4bdcbe5e90bb3d7c3.jpg' }
+    yellowPower = {name: "Carol",color: "yellow", dino: "lion", logo: "http://ep.yimg.com/ay/stylinonline/power-rangers-yellow-costume-tank-top-dress-7.jpg"}
+    bluePower = {name: "Mark",color: "blue", dino: "triceritop", logo: "http://img06.deviantart.net/cd40/i/2015/113/2/d/zyuranger___tricera_symbol_by_alpha_vector-d5p7bol.jpg" }
+    greenPower = {name: "Jack",color: "green", dino: "godzilla", logo: "https://res.cloudinary.com/teepublic/image/private/s--GQUubDW---/t_Resized Artwork/c_fit,w_470/c_crop,g_north_west,h_626,w_470,x_0,y_0/g_north_west,u_upload:v1462829019:production:blanks:ipv78ghaupktk9ogkdxg,x_-395,y_-325/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1461195663/production/designs/485680_1.jpg" }
+    pinkPower = {name: "Stacey",color: "pink", dino: "tyradakdil", logo: "http://orig06.deviantart.net/78a0/f/2012/109/0/4/mmpr2010_2011_005_pink_crane_ninja_coin_symbol_by_ebgamesguy20-d4wxjn8.jpg"}
+    blackPower = {name: "Carl",color: "black", dino: "mammoth", logo: "http://ep.yimg.com/ay/stylinonline/power-rangers-black-costume-tank-top-dress-7.jpg"}
+
+// the body querySelector
+    theBody = document.querySelector('body')
+
+//createElement ('p') for each power ranger//
+
+    theRedP = document.createElement('p')
+    theYellowP = document.createElement('p')
+    theBlueP = document.createElement('p')
+    theGreenP = document.createElement('p')
+    thePinkP = document.createElement('p')
+    theBlackP = document.createElement('p')
+
+//innerTextfor the ('p') elements//
+    theRedP.innerText = 'The ' + redPower.color + ' ranger name is ' + redPower.name + ' his logo is a ' + redPower.dino
+    theYellowP.innerText = 'The ' + yellowPower.color + ' ranger name is ' + yellowPower.name + ' her logo is a ' + yellowPower.dino
+    theBlueP.innerText = 'The ' + bluePower.color + ' ranger name is ' + bluePower.name + ' his logo is a ' + bluePower.dino
+    theGreenP.innerText = 'The ' + greenPower.color + ' ranger name is ' + greenPower.name + ' his logo is a ' + greenPower.dino
+    thePinkP.innerText = 'The ' + pinkPower.color + ' ranger name is ' + pinkPower.name + ' her logo is a ' + pinkPower.dino
+    theBlackP.innerText = 'The ' + blackPower.color + ' ranger name is ' + blackPower.name + ' his logo is a ' + blackPower.dino
+
+//appendChild of the ('p') elements to theBody querySelector //
+    theBody.appendChild(theRedP)
+    theBody.appendChild(theYellowP)
+    theBody.appendChild(theBlueP)
+    theBody.appendChild(theGreenP)
+    theBody.appendChild(thePinkP)
+    theBody.appendChild(theBlackP)
+
+//the ('img') created elements
+    theRedPic = document.createElement('img')
+    theYellowPic = document.createElement('img')
+    theBluePic = document.createElement('img')
+    theGreenPic = document.createElement('img')
+    thePinkPic = document.createElement('img')
+    theBlackPic = document.createElement('img')
+
+// theRedPic source, appendChild, dimensions, display style and color
+    theRedPic.src = redPower.logo
+    theRedP.appendChild(theRedPic)
+    theRedPic.style.width = '300px'
+    theRedPic.style.height = '300px'
+    theRedPic.style.display = 'block'
+    theRedP.style.color = 'red'
+// theYellowPic source, appendChild, dimensions, display style and color
+    theYellowPic.src = yellowPower.logo
+    theYellowP.appendChild(theYellowPic)
+    theYellowPic.style.width = '300px'
+    theYellowPic.style.height = '300px'
+    theYellowPic.style.display = 'block'
+    theYellowP.style.color = 'yellow'
+// theBluePic source, appendChild, dimensions, display style and color
+    theBluePic.src = bluePower.logo
+    theBlueP.appendChild(theBluePic)
+    theBluePic.style.width = '300px'
+    theBluePic.style.height = '300px'
+    theBluePic.style.display = 'block'
+    theBlueP.style.color = 'blue'
+// theGreenPic source, appendChild, dimensions, display style and color
+    theGreenPic.src = greenPower.logo
+    theGreenP.appendChild(theGreenPic)
+    theGreenPic.style.width = '300px'
+    theGreenPic.style.height = '300px'
+    theGreenPic.style.display = 'block'
+    theGreenP.style.color = 'green'
+// thePinkPic source, appendChild, dimensions, display style and color
+    thePinkPic.src = pinkPower.logo
+    thePinkP.appendChild(thePinkPic)
+    thePinkPic.style.width = '300px'
+    thePinkPic.style.height = '300px'
+    thePinkPic.style.display = 'block'
+    thePinkP.style.color = 'pink'
+// theBlackPic source, appendChild, dimensions, display style and color
+    theBlackPic.src = blackPower.logo
+    theBlackP.appendChild(theBlackPic)
+    theBlackPic.style.width = '300px'
+    theBlackPic.style.height = '300px'
+    theBlackPic.style.display = 'block'
+    theBlackP.style.color = 'black'
+
+    </script>
+  </body>
+</html>
